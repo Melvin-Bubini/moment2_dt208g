@@ -1,0 +1,23 @@
+{
+  "name": "moment2_dt207g",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "compile": "tsc src/typescript/main.ts",
+    "execute": "node dist/js/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 2%, last 2 versions, not dead"
+  ],
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "sass": "^1.74.1",
+    "typescript": "^5.4.3"
+  }
+}
