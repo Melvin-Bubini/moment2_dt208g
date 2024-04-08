@@ -6,8 +6,8 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "compile": "tsc src/typescript/main.ts",
-    "execute": "node dist/js/main.js"
+    "compile": "tsc",
+    "execute": "node dist/js/main.js dist/js/TodoList.js"
   },
   "keywords": [],
   "author": "",

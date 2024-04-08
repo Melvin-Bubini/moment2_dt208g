@@ -37,15 +37,49 @@ export class TodoList implements Todo {
         }
     }
 
-    public static markTodoCompleted (todoIndex: number): void {
+    public static markTodoCompleted(todoIndex: number): void {
         const tempObject = this.todos[todoIndex];
-        const updtdTodoList = new TodoList (tempObject.task, true, tempObject.priority);
+        const updtdTodoList = new TodoList(tempObject.task, true, tempObject.priority);
         this.todos.splice(todoIndex, 1, updtdTodoList);
     }
 
 
-    // public static getTodos(): Todo[] {
+    public static getTodos(): Todo[] {
+        return this.todos;
+    }
 
-    // }
+    //Metod som sparar arrayen till localstorage
+    public static saveToLocalStorage(): void {
+        localStorage.setItem("Todos key", JSON.stringify(this.todos));
+    }
+
+
+    //Laddar upp hela listan från arrayen och sparar över den till todos-arrayen
+    public static loadFromLocalStorage(): void {
+        if (localStorage.length > 0) {
+            let tempTodos: Todo[] = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                let tempArray: any = JSON.parse(localStorage.getItem("Todos key")!);
+                tempArray.forEach((element: Todo) => {
+                    tempTodos.push(element);
+                });
+            }
+            this.todos = tempTodos;
+        }
+    }
+
+
+    //metod som rensar todos
+    public static clearTodos(): void {
+        let tempTodos: Todo[] = [];
+        this.todos = tempTodos;
+    }
+
+    // metod som tar bort todos baserat på index
+    public static removeTodo(index: number): void {
+        this.todos.splice(index, 1);
+        this.saveToLocalStorage();
+    }
+
 }
 
