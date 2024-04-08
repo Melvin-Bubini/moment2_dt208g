@@ -658,9 +658,9 @@ function buildList() {
         newDiv.innerHTML = `
         <p>${tempArray[i].task}</p>
         <p class="inline priority">Prioritet: ${tempArray[i].priority}</p>
-        <label for="completed" class="inline">F\xe4rdig:</label>
-        <input type="checkbox" class="inline box" ${disabled} ${box} id="${i}" name="completed">
-        <button title="${i}" class="remove-todo">Ta bort</button>
+        <label for="completed" class="fardigLabel">F\xe4rdig:</label>
+        <input type="checkbox" class="fardigBox" ${disabled} ${box} id="${i}" name="completed">
+        <button title="${i}" class="delete_todo">Ta bort</button>
         `;
         whichDiv.appendChild(newDiv);
     }
@@ -675,8 +675,8 @@ function addTodoList() {
     if (TodoList_1.TodoList.addTodo(newTodoList)) {
         TodoList_1.TodoList.saveToLocalStorage();
         buildList();
-        taskInput.innerHTML = "";
-        priorityInput.innerHTML = "";
+        taskInput.value = "";
+        priorityInput.value = "";
     } else alert("Du m\xe5ste fylla i b\xe5de en uppgift och en prioritet!");
 }
 

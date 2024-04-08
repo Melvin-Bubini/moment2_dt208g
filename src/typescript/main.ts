@@ -114,9 +114,9 @@ function buildList(): void {
             newDiv.innerHTML = `
         <p>${tempArray[i].task}</p>
         <p class="inline priority">Prioritet: ${tempArray[i].priority}</p>
-        <label for="completed" class="inline">Färdig:</label>
-        <input type="checkbox" class="inline box" ${disabled} ${box} id="${i}" name="completed">
-        <button title="${i}" class="remove-todo">Ta bort</button>
+        <label for="completed" class="fardigLabel">Färdig:</label>
+        <input type="checkbox" class="fardigBox" ${disabled} ${box} id="${i}" name="completed">
+        <button title="${i}" class="delete_todo">Ta bort</button>
         `;
             whichDiv.appendChild(newDiv);
         }
@@ -128,7 +128,7 @@ function buildList(): void {
 function addTodoList(): void {
     // hämtar input data från inputfälten
     const taskInput = document.getElementById('todoInput') as HTMLInputElement;
-    const priorityInput = document.getElementById('priorityInput') as HTMLInputElement;
+    const priorityInput = document.getElementById('priorityInput') as HTMLSelectElement;
     // completedInput sätts till false som default
     const completedInput: boolean = false;
 
@@ -149,8 +149,8 @@ function addTodoList(): void {
         buildList();
 
         //Rensar ifyllda uppgifter i formuläret
-        taskInput.innerHTML = "";
-        priorityInput.innerHTML = "";
+        taskInput.value  = "";
+        priorityInput.value  = "";
     }
     else {
         alert('Du måste fylla i både en uppgift och en prioritet!');

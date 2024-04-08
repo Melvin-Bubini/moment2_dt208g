@@ -37,7 +37,13 @@ $background-color-dark: darken($background-color, 40%);
     line-height: $line-height;
     margin-bottom: 0%;
     font-family: $font-style;
+}
 
+@mixin h3-styles {
+    font-size: 1.2em;
+    line-height: $line-height;
+    margin-bottom: 0%;
+    font-family: $font-style;
 }
 
 @mixin p-styles {

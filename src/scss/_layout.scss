@@ -45,6 +45,11 @@ main {
     text-align: center;
 }
 
+#todo_btn {
+    text-decoration: underline;
+}
+
+
 #todo_btn, #completed_btn {
     flex: 1; /* Delar flex-utrymmet jämnt mellan de två elementen */
     margin-right: 10px; /* Lägger till lite mellanrum mellan elementen */
@@ -53,6 +58,32 @@ main {
 
 #todo_btn, #completed_btn:hover {
     cursor: pointer;
+}
+
+#todoListDivs, #completedListDivs {
+    width: 100%;
+    @include base.center-element;
+}
+
+#todoDiv, #todoCompleted {
+    width: 33%
+}
+
+.priority1, .priority2, .priority3 {
+    @include base.h3-styles;
+    border: 2px solid black;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    p {
+        margin: 0;
+        @include base.h3-styles;
+    }
+
+    .fardigLabel {
+        @include base.h3-styles;
+    }
 }
 
 // Footer
