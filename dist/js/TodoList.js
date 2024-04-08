@@ -30,6 +30,32 @@ class TodoList {
         const updtdTodoList = new TodoList(tempObject.task, true, tempObject.priority);
         this.todos.splice(todoIndex, 1, updtdTodoList);
     }
+    static getTodos() {
+        return this.todos;
+    }
+    static saveToLocalStorage() {
+        localStorage.setItem("Todos key", JSON.stringify(this.todos));
+    }
+    static loadFromLocalStorage() {
+        if (localStorage.length > 0) {
+            let tempTodos = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                let tempArray = JSON.parse(localStorage.getItem("Todos key"));
+                tempArray.forEach((element) => {
+                    tempTodos.push(element);
+                });
+            }
+            this.todos = tempTodos;
+        }
+    }
+    static clearTodos() {
+        let tempTodos = [];
+        this.todos = tempTodos;
+    }
+    static removeTodo(index) {
+        this.todos.splice(index, 1);
+        this.saveToLocalStorage();
+    }
 }
 exports.TodoList = TodoList;
 TodoList.todos = [];

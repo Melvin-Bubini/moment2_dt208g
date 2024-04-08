@@ -3,11 +3,11 @@ import { Todo } from "./interface";
 export class TodoList implements Todo {
     task: string;
     completed: boolean;
-    priority: 1 | 2 | 3; // 1 för högsta prioritet, 2 för mellanprioritet, 3 för lägsta prioritet
+    priority: number; // 1 för högsta prioritet, 2 för mellanprioritet, 3 för lägsta prioritet
 
     static todos: Todo[] = []; // En array av Todo-objekt
 
-    constructor(task: string, completed: boolean, priority: 1 | 2 | 3) {
+    constructor(task: string, completed: boolean, priority: number) {
         this.task = task;
         this.completed = completed;
         this.priority = priority;
