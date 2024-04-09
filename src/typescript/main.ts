@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Eventlistener för att visa ofärdiga inlägg och dölja klara
     todoBtn.addEventListener('click', (e) => {
-        todoListDivs.style.display = "block";
+        todoListDivs.style.display = "flex";
         todoBtn.style.textDecoration = "underline";
         completedListDivs.style.display = "none";
         completedBtn.style.textDecoration = "none";
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         todoListDivs.style.display = "none";
         todoBtn.style.textDecoration = "none";
         completedBtn.style.textDecoration = "underline";
-        completedListDivs.style.display = "block";
+        completedListDivs.style.display = "flex";
     });
 
     //Eventlistener som tömmer localstorage, rensar html-sidan och resetar arrayen med inlägg.
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //Funktion som tar bort inlägg eller markerar som klara
 
 function removeTodo(e: MouseEvent): void {
-    if ((e.target as HTMLButtonElement).classList.contains('remove-todo')) {
+    if ((e.target as HTMLButtonElement).classList.contains('delete_todo')) {
         let index = Number((e.target as HTMLElement).title);
         //skickar med index för inlägget till removeTodo funktionen i klassen todolist
         TodoList.removeTodo(index);
@@ -114,8 +114,8 @@ function buildList(): void {
             newDiv.innerHTML = `
         <p>${tempArray[i].task}</p>
         <p class="inline priority">Prioritet: ${tempArray[i].priority}</p>
-        <label for="completed" class="fardigLabel">Färdig:</label>
-        <input type="checkbox" class="fardigBox" ${disabled} ${box} id="${i}" name="completed">
+        <label for="completed" class="inline">Färdig:</label>
+        <input type="checkbox" class="inline box" ${disabled} ${box} id="${i}" name="completed">
         <button title="${i}" class="delete_todo">Ta bort</button>
         `;
             whichDiv.appendChild(newDiv);

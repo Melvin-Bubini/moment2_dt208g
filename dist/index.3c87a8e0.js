@@ -606,7 +606,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         removeTodo(e);
     });
     todoBtn.addEventListener("click", (e)=>{
-        todoListDivs.style.display = "block";
+        todoListDivs.style.display = "flex";
         todoBtn.style.textDecoration = "underline";
         completedListDivs.style.display = "none";
         completedBtn.style.textDecoration = "none";
@@ -615,7 +615,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         todoListDivs.style.display = "none";
         todoBtn.style.textDecoration = "none";
         completedBtn.style.textDecoration = "underline";
-        completedListDivs.style.display = "block";
+        completedListDivs.style.display = "flex";
     });
     delete_localStrgBtn.addEventListener("click", (e)=>{
         localStorage.clear();
@@ -629,7 +629,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 });
 function removeTodo(e) {
-    if (e.target.classList.contains("remove-todo")) {
+    if (e.target.classList.contains("delete_todo")) {
         let index = Number(e.target.title);
         TodoList_1.TodoList.removeTodo(index);
     }
@@ -658,8 +658,8 @@ function buildList() {
         newDiv.innerHTML = `
         <p>${tempArray[i].task}</p>
         <p class="inline priority">Prioritet: ${tempArray[i].priority}</p>
-        <label for="completed" class="fardigLabel">F\xe4rdig:</label>
-        <input type="checkbox" class="fardigBox" ${disabled} ${box} id="${i}" name="completed">
+        <label for="completed" class="inline">F\xe4rdig:</label>
+        <input type="checkbox" class="inline box" ${disabled} ${box} id="${i}" name="completed">
         <button title="${i}" class="delete_todo">Ta bort</button>
         `;
         whichDiv.appendChild(newDiv);
