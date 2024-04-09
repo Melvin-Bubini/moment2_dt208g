@@ -14,7 +14,7 @@
 114C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@swc\helpers\_\_assert_this_initialized\package.json133566926832873566 0
 102C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\caniuse-lite\data\features\filesystem.js133566926836376507 0
 104C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@swc\helpers\_\_class_apply_descriptor_get133566926833069371 1
-53C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist133571664886927086 1
+53C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist133571674632101379 1
 121C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\parser133566926831428867 1
 104C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\css-select\node_modules\entities\readme.md133566926829074235 0
 111C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@babel\highlight\node_modules\color-name\index.js133566926822785030 0
@@ -150,7 +150,7 @@
 98C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\caniuse-lite\data\features\brotli.js133566926830217807 0
 113C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@swc\helpers\esm\_class_private_field_loose_base.js133566926831449125 0
 82C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\node-addon-api\tools133566926826328947 1
-74C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\src\scss\_components.scss133571664883597663 0
+74C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\src\scss\_components.scss133571674630148581 0
 81C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\callsites\readme.md133566926822712454 0
 84C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\entities\lib\decode.js133566926823494553 0
 91C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\source-map-js\source-map.d.ts133566926825407620 0
@@ -5946,7 +5946,7 @@
 96C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@parcel\core\src\Transformation.js133566926832590745 0
 87C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@parcel\core\src\types.js133566926832641539 0
 98C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@parcel\core\src\UncommittedAsset.js133566926832672306 0
-76C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist\index.b10d73a7.css.map133571664886906772 0
+76C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist\index.b10d73a7.css.map133571674632051375 0
 92C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@parcel\core\src\Validation.js133566926832752624 0
 88C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@parcel\core\src\worker.js133566926832816021 0
 104C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\@parcel\core\src\requests\ConfigRequest.js133566926829324442 0
@@ -6112,6 +6112,6 @@
 79C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\.bin\tsserver.cmd133566926842433711 0
 89C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\.bin\update-browserslist-db133566926842433711 0
 93C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\node_modules\.bin\update-browserslist-db.ps1133566926842433711 0
-72C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist\index.b10d73a7.css133571664886862318 0
 64C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist\index.html133571664886554547 0
 79C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist\standardLogo.716e2659.svg133571664885830888 0
+72C:\Users\melvi\OneDrive\Skrivbord\moment2_dt208g\dist\index.b10d73a7.css133571674631991626 0
